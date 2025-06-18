@@ -1,0 +1,23 @@
+{
+  "name": "lo-js-tests",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun run prettier && bun run index.ts",
+    "prettier": "prettier --write ."
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@permaweb/aoconnect": "^0.0.77",
+    "ao-tokens": "^0.0.6",
+    "liquidops": "^1.2.3",
+    "prettier": "^3.5.3",
+    "warp-arbundles": "^1.0.4"
+  }
+}
