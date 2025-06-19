@@ -1,5 +1,4 @@
 import LiquidOps from "liquidops";
-import { type JWKInterface } from "./src/utils/jwk-interface";
 import { ownerToAddress } from "./src/utils/arweaveUtils";
 import { createDataItemSigner } from "@permaweb/aoconnect";
 import { formatGlobalPosition } from "./src/utils/formatGlobalPosition";
@@ -8,7 +7,7 @@ if (!process.env.JWK) {
   throw new Error("Please specify a JWK in the .env file");
 }
 
-const JWK: JWKInterface = JSON.parse(process.env.JWK);
+const JWK: any = JSON.parse(process.env.JWK);
 const signer = createDataItemSigner(JWK);
 const client = new LiquidOps(signer);
 const walletAddress = await ownerToAddress(JWK.n);
