@@ -14,7 +14,7 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "@permaweb/aoconnect": "^0.0.77",
+    "@permaweb/aoconnect": "^0.0.85",
     "ao-tokens": "^0.0.6",
     "liquidops": "^1.2.3",
     "prettier": "^3.5.3",
